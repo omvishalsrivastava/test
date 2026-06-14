@@ -7,6 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket, Zap, Globe, Menu, X } from "lucide-react";
 import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export default function Advanced() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
