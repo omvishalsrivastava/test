@@ -103,3 +103,12 @@
 .animate-fade-in {
   animation: fade-in 0.4s ease-out forwards;
 }
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: var(--tw-opacity); }
+  50% { transform: scale(1.05); opacity: calc(var(--tw-opacity) * 1.2); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}

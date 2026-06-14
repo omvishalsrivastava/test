@@ -50,8 +50,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-30 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/20 blur-[120px] rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-40 pointer-events-none">
+          <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/20 blur-[120px] rounded-full" />
+          <div className="absolute top-[-50px] right-[-100px] w-[500px] h-[500px] animate-pulse-slow opacity-20">
+            <img src="/mars.webp" alt="Mars" className="w-full h-full object-contain" />
+          </div>
+          <div className="absolute bottom-[-100px] left-[-100px] w-[400px] h-[400px] animate-pulse-slow opacity-10" style={{ animationDelay: '2s' }}>
+            <img src="/mars.webp" alt="Mars" className="w-full h-full object-contain rotate-180" />
+          </div>
         </div>
         
         <div className="container text-center space-y-8">
