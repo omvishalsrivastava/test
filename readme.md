@@ -156,13 +156,16 @@ This equation forms the foundation of modern spacecraft propulsion analysis and 
 
 ## 🚧 Roadmap
 
-### Version 1.1
+### Version 1.1 (Current)
 
 * Dark Mode Support
+* Global Footer & Navigation
 * Privacy Policy
 * Terms of Service
 * Disclaimer Page
 * About Page
+* Improved Mobile UI
+* Centered Layout Optimization
 * Improved Documentation
 
 ### Version 1.2

@@ -67,9 +67,9 @@ export function MissionInputForm({ onCalculate }: MissionInputFormProps) {
     : PROPULSION_SYSTEMS[engineType].ispDefault;
 
   return (
-    <Card className="card-elevated p-6 md:p-8 overflow-hidden relative">
-      <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-        <img src="/mars-ultra.png" alt="Mars" className="w-32 h-32 object-contain" />
+    <Card className="card-elevated p-5 md:p-8 overflow-hidden relative">
+      <div className="absolute top-0 right-0 p-4 md:p-8 opacity-10 pointer-events-none">
+        <img src="/mars-ultra.png" alt="Mars" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
       </div>
 
       <div className="space-y-8 relative z-10">

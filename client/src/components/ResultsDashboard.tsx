@@ -35,7 +35,7 @@ export function ResultsDashboard({ results }: ResultsDashboardProps) {
   return (
     <div className="space-y-6 animate-fade-in">
       {/* Top Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         <SummaryCard
           title="Initial Mass"
           value={formatMass(results.initialMass)}

@@ -5,6 +5,7 @@ import { ResultsDashboard } from "@/components/ResultsDashboard";
 import { MissionVisualizations } from "@/components/MissionVisualizations";
 import { Rocket, Globe, ChevronRight, Github } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -48,6 +49,7 @@ export default function Home() {
             <a href="https://github.com/omvishalsrivastava/OpenMars" target="_blank" rel="noreferrer" className="p-2 rounded-full hover:bg-muted transition-colors">
               <Github className="w-5 h-5" />
             </a>
+            <ThemeToggle />
           </div>
         </div>
       </nav>
@@ -92,14 +94,14 @@ export default function Home() {
       <main id="planner" className="container pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Input Form */}
-          <div className="lg:col-span-5 xl:col-span-4">
+          <div className="lg:col-span-5 xl:col-span-5">
             <div className="lg:sticky lg:top-24">
               <MissionInputForm onCalculate={handleCalculate} />
             </div>
           </div>
 
           {/* Results Area */}
-          <div id="results-section" className="lg:col-span-7 xl:col-span-8 min-h-[600px]">
+          <div id="results-section" className="lg:col-span-7 xl:col-span-7 min-h-[600px]">
             {missionData ? (
               <div className="space-y-8 animate-fade-in">
                 <ResultsDashboard

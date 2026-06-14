@@ -6,6 +6,7 @@ import { MarsMissionPlanner } from "@/components/MarsMissionPlanner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket, Zap, Globe } from "lucide-react";
 import { Footer } from "@/components/Footer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Advanced() {
   const [missionData, setMissionData] = useState<{
@@ -38,11 +39,14 @@ export default function Advanced() {
               </div>
             </Link>
           </div>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="container py-8 md:py-12 flex-grow">
+      <main className="container py-8 md:py-12 flex-grow max-w-6xl mx-auto">
         <Tabs defaultValue="comparison" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="comparison" className="flex items-center gap-2 cursor-pointer">

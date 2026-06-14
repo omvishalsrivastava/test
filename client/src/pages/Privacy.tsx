@@ -1,9 +1,11 @@
 import { Globe } from "lucide-react";
 import { Link } from "wouter";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { Footer } from "@/components/Footer";
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <nav className="border-b border-border/50 bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 cursor-pointer">
@@ -12,6 +14,7 @@ export default function Privacy() {
             </div>
             <span className="text-xl font-bold tracking-tight">OpenMars</span>
           </Link>
+          <ThemeToggle />
         </div>
       </nav>
 
@@ -56,6 +59,7 @@ export default function Privacy() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
