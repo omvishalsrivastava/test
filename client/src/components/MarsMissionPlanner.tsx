@@ -87,10 +87,10 @@ export function MarsMissionPlanner({ onPlanMission }: MarsMissionPlannerProps) {
         {/* Header */}
         <div className="space-y-2">
           <div className="flex items-center gap-2">
-            <Globe className="w-5 h-5 text-blue-600" />
-            <h2 className="text-2xl font-bold">Mars Mission Planner (V2)</h2>
+            <Globe className="w-5 h-5 text-primary" />
+            <h2 className="text-2xl font-bold">Mars Mission Planner</h2>
           </div>
-          <p className="text-gray-600">
+          <p className="text-muted-foreground">
             Plan your Earth-to-Mars mission with customizable parameters
           </p>
         </div>
@@ -185,21 +185,21 @@ export function MarsMissionPlanner({ onPlanMission }: MarsMissionPlannerProps) {
         </div>
 
         {/* Transfer Type Details */}
-        <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-          <p className="font-semibold text-blue-900 mb-2">{transferInfo.name}</p>
-          <p className="text-sm text-blue-800 mb-3">{transferInfo.description}</p>
+        <div className="p-4 bg-primary/5 border border-primary/10 rounded-lg">
+          <p className="font-semibold text-primary mb-2">{transferInfo.name}</p>
+          <p className="text-sm text-muted-foreground mb-3">{transferInfo.description}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-xs font-semibold text-blue-900 mb-2">Advantages:</p>
-              <ul className="text-xs text-blue-800 space-y-1">
+              <p className="text-xs font-semibold text-foreground mb-2">Advantages:</p>
+              <ul className="text-xs text-muted-foreground space-y-1">
                 {transferInfo.advantages.map((adv, idx) => (
                   <li key={idx}>✓ {adv}</li>
                 ))}
               </ul>
             </div>
             <div>
-              <p className="text-xs font-semibold text-blue-900 mb-2">Considerations:</p>
-              <ul className="text-xs text-blue-800 space-y-1">
+              <p className="text-xs font-semibold text-foreground mb-2">Considerations:</p>
+              <ul className="text-xs text-muted-foreground space-y-1">
                 {transferInfo.disadvantages.map((dis, idx) => (
                   <li key={idx}>• {dis}</li>
                 ))}
@@ -211,8 +211,8 @@ export function MarsMissionPlanner({ onPlanMission }: MarsMissionPlannerProps) {
         {/* Mission Results */}
         <div className="space-y-4">
           <h3 className="font-semibold text-lg">Mission Architecture</h3>
-          <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-            <p className="text-center font-semibold text-blue-600">
+          <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
+            <p className="text-center font-semibold text-primary">
               {results.missionArchitecture}
             </p>
           </div>
@@ -220,32 +220,32 @@ export function MarsMissionPlanner({ onPlanMission }: MarsMissionPlannerProps) {
 
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 font-medium">Delta-v Requirement</p>
-            <p className="text-2xl font-bold text-blue-600 mt-2">
+          <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
+            <p className="text-sm text-muted-foreground font-medium">Delta-v Requirement</p>
+            <p className="text-2xl font-bold text-primary mt-2">
               {formatVelocity(results.deltaVRequirement)}
             </p>
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-muted-foreground mt-1">
               {transferType === "hohmann" ? "Hohmann" : "Fast"} transfer
             </p>
           </div>
 
-          <div className="p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 font-medium">Estimated Transit Time</p>
-            <p className="text-2xl font-bold text-blue-600 mt-2">
+          <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
+            <p className="text-sm text-muted-foreground font-medium">Estimated Transit Time</p>
+            <p className="text-2xl font-bold text-primary mt-2">
               {formatTime(results.estimatedTransitTime)}
             </p>
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-muted-foreground mt-1">
               {system.label} propulsion
             </p>
           </div>
 
-          <div className="p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600 font-medium">Initial Mass</p>
-            <p className="text-2xl font-bold text-blue-600 mt-2">
+          <div className="p-4 bg-muted/30 rounded-lg border border-border/50">
+            <p className="text-sm text-muted-foreground font-medium">Initial Mass</p>
+            <p className="text-2xl font-bold text-primary mt-2">
               {formatNumber(results.initialMass / 1000, 1)} t
             </p>
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-muted-foreground mt-1">
               {formatNumber((results.propellantFraction * 100), 1)}% propellant
             </p>
           </div>

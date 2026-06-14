@@ -4,6 +4,7 @@ import { MissionInputForm } from "@/components/MissionInputForm";
 import { ResultsDashboard } from "@/components/ResultsDashboard";
 import { MissionVisualizations } from "@/components/MissionVisualizations";
 import { Rocket, Globe, ChevronRight, Github } from "lucide-react";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -35,13 +36,16 @@ export default function Home() {
             <div className="w-8 h-8 rounded-full overflow-hidden border border-primary/20">
               <img src="/mars-ultra.png" alt="Mars" className="w-full h-full object-cover" />
             </div>
-            <span className="text-xl font-bold tracking-tight">Open-Mars</span>
+            <span className="text-xl font-bold tracking-tight">OpenMars</span>
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/advanced" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-              Advanced Planner
+            <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              About
             </Link>
-            <a href="https://github.com/omvishalsrivastava/open-mars" target="_blank" rel="noreferrer" className="p-2 rounded-full hover:bg-muted transition-colors">
+            <Link href="/advanced" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Advanced
+            </Link>
+            <a href="https://github.com/omvishalsrivastava/OpenMars" target="_blank" rel="noreferrer" className="p-2 rounded-full hover:bg-muted transition-colors">
               <Github className="w-5 h-5" />
             </a>
           </div>
@@ -130,25 +134,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border/50 py-12 bg-muted/30">
-        <div className="container flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full overflow-hidden border border-primary/20">
-              <img src="/mars-ultra.png" alt="Mars" className="w-full h-full object-cover" />
-            </div>
-            <span className="font-bold tracking-tight">Open-Mars</span>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            © 2026 Open-Mars Aerospace. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-xs font-medium text-muted-foreground hover:text-primary transition-colors">Privacy</a>
-            <a href="#" className="text-xs font-medium text-muted-foreground hover:text-primary transition-colors">Terms</a>
-            <a href="#" className="text-xs font-medium text-muted-foreground hover:text-primary transition-colors">Contact</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

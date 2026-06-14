@@ -5,6 +5,7 @@ import { MissionComparison } from "@/components/MissionComparison";
 import { MarsMissionPlanner } from "@/components/MarsMissionPlanner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Rocket, Zap, Globe } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 export default function Advanced() {
   const [missionData, setMissionData] = useState<{
@@ -20,7 +21,7 @@ export default function Advanced() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-white via-white to-gray-50 flex flex-col">
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container py-4 md:py-6">
@@ -28,18 +29,20 @@ export default function Advanced() {
             <div className="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
               <img src="/mars-ultra.png" alt="Mars" className="w-full h-full object-cover" />
             </div>
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold">Open-Mars Advanced</h1>
-              <p className="text-sm text-gray-600">
-                Mission Comparison & Mars Mission Planner
-              </p>
-            </div>
+            <Link href="/">
+              <div className="cursor-pointer">
+                <h1 className="text-2xl md:text-3xl font-bold">OpenMars Advanced</h1>
+                <p className="text-sm text-gray-600">
+                  Mission Comparison & Mars Mission Planner
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="container py-8 md:py-12">
+      <main className="container py-8 md:py-12 flex-grow">
         <Tabs defaultValue="comparison" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="comparison" className="flex items-center gap-2 cursor-pointer">
@@ -94,6 +97,7 @@ export default function Advanced() {
           </TabsContent>
         </Tabs>
       </main>
+      <Footer />
     </div>
   );
 }

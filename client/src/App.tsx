@@ -6,6 +6,10 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Advanced from "./pages/Advanced";
+import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Disclaimer from "./pages/Disclaimer";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -13,6 +17,10 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/advanced" component={Advanced} />
+      <Route path="/about" component={About} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/disclaimer" component={Disclaimer} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

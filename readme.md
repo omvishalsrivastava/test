@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Open-Mars</h1>
+<h1 align="center">🚀 OpenMars</h1>
 
 
 
@@ -23,13 +23,13 @@
 
 ## 🌍 Live Demo
 
-**Open-Mars:** https://openmars.vercel.app
+**OpenMars:** https://openmars.vercel.app
 
 ---
 
 ## 📖 Overview
 
-Open-Mars is a web-based aerospace mission planning platform designed to help students, enthusiasts, and aspiring engineers explore the challenges of interplanetary travel.
+OpenMars is a web-based aerospace mission planning platform designed to help students, enthusiasts, and aspiring engineers explore the challenges of interplanetary travel.
 
 The platform evaluates Earth-to-Mars missions by calculating mass ratios, propellant requirements, payload fractions, and mission feasibility using the Tsiolkovsky Rocket Equation.
 
@@ -57,7 +57,7 @@ Users can compare multiple propulsion technologies and understand how propulsion
 
 ### Mission Calculations
 
-Open-Mars calculates:
+OpenMars calculates:
 
 * Mass Ratio
 * Initial Mass
@@ -84,7 +84,7 @@ Open-Mars calculates:
 
 ## 🔬 Physics Model
 
-Open-Mars uses the Tsiolkovsky Rocket Equation:
+OpenMars uses the Tsiolkovsky Rocket Equation:
 
 Δv = Isp × g₀ × ln(m₀ / m₁)
 
@@ -158,6 +158,7 @@ This equation forms the foundation of modern spacecraft propulsion analysis and 
 
 ### Version 1.1
 
+* Dark Mode Support
 * Privacy Policy
 * Terms of Service
 * Disclaimer Page
@@ -190,7 +191,7 @@ This equation forms the foundation of modern spacecraft propulsion analysis and 
 
 ## ⚠ Disclaimer
 
-Open-Mars is an educational and research-oriented platform.
+OpenMars is an educational and research-oriented platform.
 
 The calculations provided are based on simplified aerospace engineering models and should not be used for real-world mission planning without independent verification.
 
