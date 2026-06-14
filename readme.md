@@ -1,13 +1,11 @@
 <h1 align="center">🚀 OpenMars</h1>
 
-<p align="center">
-  <img src="assets/mars.jpg" width="350">
-</p>
+
 
 <p align="center">
   <strong>Aerospace Mission Planning & Propulsion Analysis Platform</strong>
 </p>
-# 🚀 OpenMars
+
 
 <p align="center">
   <img src="mars.jpg" width="250">
