@@ -42,7 +42,7 @@ export default function Terms() {
         )}
       </nav>
 
-      <main className="container py-16 max-w-3xl">
+      <main className="container py-16 max-w-3xl mx-auto text-center">
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tight">Terms of Service</h1>

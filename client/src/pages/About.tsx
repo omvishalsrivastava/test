@@ -42,7 +42,7 @@ export default function About() {
         )}
       </nav>
 
-      <main className="container py-16 max-w-4xl">
+      <main className="container py-16 max-w-4xl mx-auto text-center">
         <div className="space-y-12">
           <div className="space-y-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">About OpenMars</h1>
@@ -51,7 +51,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="p-6 rounded-2xl border border-border/50 bg-card/50 space-y-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                 <Rocket className="w-6 h-6 text-primary" />
@@ -92,22 +92,22 @@ export default function About() {
           <section className="space-y-6">
             <h2 className="text-3xl font-bold">Future Roadmap</h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="mt-1 w-2 h-2 rounded-full bg-primary" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <div className="w-2 h-2 rounded-full bg-primary" />
                 <div>
                   <h4 className="font-bold">Version 1.1</h4>
                   <p className="text-muted-foreground">Dark Mode Support, Enhanced Documentation, and Advanced Launch Vehicle Selection.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-1 w-2 h-2 rounded-full bg-primary/50" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <div className="w-2 h-2 rounded-full bg-primary/50" />
                 <div>
                   <h4 className="font-bold">Version 1.2</h4>
                   <p className="text-muted-foreground">Crewed Mission Planning, Habitat Mass Calculations, and Life Support Requirements.</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="mt-1 w-2 h-2 rounded-full bg-primary/30" />
+              <div className="flex flex-col items-center gap-2 text-center">
+                <div className="w-2 h-2 rounded-full bg-primary/30" />
                 <div>
                   <h4 className="font-bold">Version 2.0</h4>
                   <p className="text-muted-foreground">Orbital Visualization, Transfer Window Planning, and PDF Mission Reports.</p>

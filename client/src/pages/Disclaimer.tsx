@@ -42,9 +42,9 @@ export default function Disclaimer() {
         )}
       </nav>
 
-      <main className="container py-16 max-w-3xl">
+      <main className="container py-16 max-w-3xl mx-auto text-center">
         <div className="space-y-8">
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-600 text-xs font-bold uppercase tracking-wider">
               <AlertTriangle className="w-3.5 h-3.5" />
               Important Notice
